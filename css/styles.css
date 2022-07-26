@@ -110,7 +110,7 @@ body {
 .site-nav {
 	display: flex;
 	margin-left: 40px;
-
+	
 }
 
 .site-nav .item +.item{
@@ -155,6 +155,8 @@ body {
 .position {
 	display: flex;
 	margin-left: auto;
+
+
 }
 
 .position .item +.item{ 
@@ -164,17 +166,19 @@ body {
 
 
 .email-phone {
-
+	
 
 	font-weight: 500;
-	line-height: 1.14;
+	/* line-height: 1.14; */
 	letter-spacing: 0.02em;
+
 }
 
 .email-phone .email-style,
 .email-phone .phone-style{
 	color: var(--primary-text-color);
 	text-decoration: inherit;
+	
 } 
 
 .email-phone .email-style:hover,
@@ -182,7 +186,47 @@ body {
 .email-phone .phone-style:hover,
 .email-phone .phone-style:focus{
 	color: var(--accent-text-color);
+	
 }
+
+
+/* .email-phone::before{
+	display: inline-block;
+	width: 16px;
+	height: 12px;
+	margin-right: 10px;
+	content: "";
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+
+} */
+
+
+.icon-email::before,
+.icon-phone::before{
+
+	display: inline-block;
+	width: 16px;
+	height: 12px;
+	margin-right: 10px;
+	content: "";
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+}
+
+.icon-email::before{
+	background-image: url("../images/envelope.svg");
+}
+
+.icon-phone::before{
+	background-image: url("../images/smartphone.svg");
+}
+
+
+
 
 /* HERO */
 .hero{
@@ -194,6 +238,21 @@ body {
 	background-color: var(--accent-bg-color);
 	text-align: center;
 }
+
+.overlay{
+	width: 1600px;
+	height: 600px;
+	background-image: linear-gradient(
+		to right,
+		rgba(47, 48, 58, 0.4),
+		rgba(47, 48, 58, 0.4)
+		),
+		url("../images/img-017-hiro.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover; 
+}
+
 
 .hero-title{
 	margin-top: 0;
@@ -274,6 +333,36 @@ body {
 	width: 270px;
 }
 
+.icon-dg::before {
+	display: block;
+	content: "";
+	height: 120px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: var(--primary-bg-color);
+	margin-bottom: 30px;
+}
+.icon-details::before{
+	background-image: url("../images/Group.svg");
+}
+
+.icon-punctuality::before{
+	background-image: url("../images/clock\ 1.svg");
+}
+
+.icon-planning::before{
+	background-image: url("../images/diagram\ 1.svg");
+}
+
+.icon-technology::before{
+	background-image: url("../images/astronaut\ 1.svg");
+}
+
+
+
+
+
 .work-list{
 	display: flex;
 	justify-content:space-between;
@@ -315,6 +404,50 @@ body {
 	line-height: 1.9;
 	text-align: center;
 }
+/* .icon-contact::after{
+	display: inline-block;
+	width: 210px;
+	height: 44px;
+	border: 2px dashed #2196F3; 
+	content: "";
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+
+
+.icon-in::after{
+	width: 44px;
+	height: 44px;
+	background-image: url("../images/instagram.svg");
+
+}
+
+.icon-tw::after{
+	width: 44px;
+	height: 44px;
+	background-image: url("../images/twitter.svg");
+
+}
+
+.icon-fa::after{
+	width: 44px;
+	height: 44px;
+	background-image: url("../images/facebook.svg");
+}
+
+.icon-li::after{
+	width: 44px;
+	height: 44px;
+	background-image: url("../images/linkedin.svg");
+}
+ */
+
+
+
+
+
 
 /* Footer */
 .footer{
