@@ -82,6 +82,7 @@ body {
 /* hidden headers */
 .visually-hidden {
 	position: absolute;
+
 	width: 1px;
 	height: 1px;
 	margin: -1px;
@@ -137,7 +138,7 @@ body {
 	margin-left: 93px;
 }
 
-.site-nav .item+.item {
+.site-nav .item + .item {
 	margin-left: 50px;
 }
 
@@ -172,7 +173,7 @@ body {
 	margin-left: auto;
 }
 
-.position .item+.item {
+.position .item + .item {
 	margin-left: 50px;
 }
 
@@ -212,7 +213,9 @@ body {
 	margin-right: 10px;
 }
 
-/* HERO */
+/*=====================
+		HERO 
+======================*/
 .hero {
 	padding-top: 200px;
 	padding-bottom: 200px;
@@ -235,7 +238,7 @@ body {
 }
 
 .hero-title {
-	margin-top: 0;
+
 	margin-bottom: 30px;
 	margin-left: auto;
 	margin-right: auto;
@@ -243,16 +246,22 @@ body {
 
 	color: var(--wite-color);
 	font-weight: 900;
+
 	font-size: 44px;
 	line-height: 1.36;
+
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
+
+
+	margin-top: 0;
+
+
 }
 
 .button {
 	padding: 10px 32px;
 	border-radius: 4px;
-
 	color: var(--wite-color);
 	background-color: var(--accent-text-color);
 	border: 1px solid var(--accent-text-color);
@@ -260,11 +269,13 @@ body {
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 1.88;
-
 	cursor: pointer;
 }
 
-/* main titles основні заголовки  */
+/*========================================
+		main titles основні заголовки 
+==========================================*/
+
 .section-title {
 	margin-top: 0;
 	margin-bottom: 50px;
@@ -274,8 +285,10 @@ body {
 	line-height: 1.17;
 	text-align: center;
 }
+/*==============================================
+		secondary titles заголовки другорядні 
+================================================*/
 
-/* secondary titles заголовки другорядні */
 .list-position {
 	display: flex;
 	justify-content: space-between;
@@ -302,21 +315,22 @@ body {
 .feature {
 	width: 270px;
 	height: 120px;
-	padding-left: 100px;
-	padding-right: 100px;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	margin-bottom: 30px;
-	margin-left: auto;
-	margin-right: auto;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+
 }
 
 .icon-feature {
-	width: 100%;
-	height: 100%;
+	width: 70px;
+	height: 70px;
 }
 
-/* Our team - Наша команда */
+/*===============================
+		Our team - Наша команда
+=================================*/
+
 .our-team {
 	background-color: var(--secondery-bg-color);
 }
@@ -387,7 +401,10 @@ body {
 	fill: currentColor;
 }
 
-/* Regular clients */
+/*===============================
+		Regular clients
+=================================*/
+
 
 .all-customers {
 	display: flex;
@@ -418,7 +435,10 @@ body {
 	height: 60px;
 }
 
-/* Footer */
+/*===============================
+		Footer 
+=================================*/
+
 .footer {
 	padding-top: 60px;
 	padding-bottom: 60px;
@@ -453,7 +473,10 @@ body {
 	color: var(--wite-color);
 }
 
-/*  Join in */
+/*===============================
+		Join in
+=================================*/
+
 
 .company-data {
 	margin-left: 70px;
@@ -469,14 +492,17 @@ body {
 	margin-right: 10px;
 }
 
-/* Portfolio */
+/*===============================
+		Portfolio
+=================================*/
+
 .filter-position {
 	display: flex;
 	justify-content: center;
 	margin-bottom: 65px;
 }
 
-.filter-position .item+.item {
+.filter-position .item + .item {
 	margin-left: 8px;
 }
 
@@ -516,13 +542,11 @@ body {
 .example-list .item {
 	width: 370px;
 	margin: 15px;
-
 }
 
-.example-link{
+.example-link {
 	display: block;
 }
-
 
 .example-link:hover,
 .example-link:focus {
