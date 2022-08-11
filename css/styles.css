@@ -320,6 +320,8 @@ body {
 	align-content: center;
 	align-items: center;
 
+	background-color: var(--secondery-bg-color);
+
 }
 
 .icon-feature {
@@ -367,8 +369,7 @@ body {
 }
 
 .individual-links {
-	/* border: 2px dashed green; */
-	padding-left: 32px;
+		padding-left: 32px;
 	padding-right: 32px;
 	display: flex;
 	justify-content: space-between;
@@ -469,13 +470,14 @@ body {
 	margin-bottom: 9px;
 }
 
-.title--white {
-	color: var(--wite-color);
-}
-
 /*===============================
 		Join in
 =================================*/
+
+
+.title--white {
+	color: var(--wite-color);
+}
 
 
 .company-data {
@@ -483,11 +485,13 @@ body {
 }
 
 .company-links {
+
 	display: flex;
 	justify-content: space-between;
 }
 
 .company-link {
+	color: var(--wite-color);
 	background-color: var(--icon-bg);
 	margin-right: 10px;
 }
